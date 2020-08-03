@@ -1,0 +1,18 @@
+body{
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
+/*---------- Cards style ----------*/
+.card{
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card:before{
+  content: "";
+  height: 3px;
+  display: block;
+  background: black;
+}
