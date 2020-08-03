@@ -7,23 +7,15 @@
 --lightgrayishblue: hsl(227, 47%, 96%);
 --darkgrayishblue: hsl(228, 12%, 44%);
 --verydarkblue: hsl(230, 17%, 14%);
+--toggle: linear-gradient(to right, hsl(228, 12%, 44%) 0%, hsl(228, 12%, 44%) 100%);
 
-
-  /*---------- Dark ----------*/
---verydarkblue: hsl(230, 17%, 14%);
---verydarkblue: hsl(232, 19%, 15%);
---darkdesaturatedblue: hsl(228, 28%, 20%);
---desaturatedblue: hsl(228, 34%, 66%);
---white: hsl(0, 0%, 100%);
-
-
+  /*---------- All ----------*/
 --green: hsl(163, 72%, 41%);
 --red: hsl(356, 69%, 56%);
 
 --facebook: hsl(208, 92%, 53%);
 --twitter: hsl(203, 89%, 53%);
---instagram-1: hsl(37, 97%, 70%);
---instagram-2: hsl(329, 70%, 58%);
+--instagram: linear-gradient(to right, hsl(37, 97%, 70%) 0%, hsl(329, 70%, 58%) 100%);
 --youTube: hsl(348, 97%, 39%);
 
 }
@@ -33,6 +25,7 @@ body{
   margin: 0;
   font-family: 'Inter', sans-serif;
   color: var(--verydarkblue);
+  background-color: var(--white);
 }
 
 .wrapper{
@@ -44,6 +37,49 @@ body{
   grid-row-gap: 25px;
 }
 
+.dark-mode{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-mode-title{
+  color: var(--darkgrayishblue);
+  font-weight: bold;
+  font-size: .95em;
+}
+
+.checkbox{
+  display: none;
+}
+
+.checkbox:checked ~ .switch::before{
+  transform: translate(40px);
+}
+
+.switch{
+  display: block;
+  width: 75px;  
+  height: 35px;
+  border-radius: 20px;
+  background-image: var(--toggle);
+  padding: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  user-select: none;
+}
+
+.switch::before{
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: var(--white);
+  border-radius: 20px;
+  position: absolute;
+  transition: .3s;
+
+}
 
 
 /*---------- Header ----------*/
@@ -103,7 +139,7 @@ h1{
 }
 
 .card.instagram::before{
-  background-image: linear-gradient(to right, var(--instagram-1) 0%, var(--instagram-2) 100%);
+  background-image: var(--instagram);
 }
 
 .card.youtube::before{
@@ -167,7 +203,7 @@ h2{
   grid-row-gap: 1em;
   border-radius: 6px;
   overflow: hidden;
-  background-color: #f0f2fa;
+  background-color: var(--lightgrayishblue);
   padding: 1.5em;
 }
 
@@ -246,7 +282,7 @@ h2{
     grid-column-gap: 25px;
   }
   .wrapper{
-    max-width: 1440px;
+    max-width: 1024px;
     margin: auto;
   }  
 }
@@ -255,7 +291,14 @@ h2{
 
 /*----------Dark Mode ----------*/
 @media (prefers-color-scheme: dark){
-  body{
-    background: black;
+  :root{    
+
+      /*---------- Dark ----------*/
+    --white: hsl(230, 17%, 14%);
+    --verypaleblue: hsl(232, 19%, 15%);
+    --lightgrayishblue: hsl(228, 28%, 20%);
+    --darkgrayishblue: hsl(228, 34%, 66%);
+    --verydarkblue: hsl(0, 0%, 100%);
+    --toggle: linear-gradient(to right, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
   }
 }
