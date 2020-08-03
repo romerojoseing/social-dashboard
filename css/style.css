@@ -307,6 +307,7 @@ h2{
   }  
 }
 
+
 .is-dark-mode{
   --white: hsl(230, 17%, 14%);
   --verypaleblue: hsl(232, 19%, 15%);
@@ -325,17 +326,3 @@ h2{
   --toggle: linear-gradient(to right, hsl(228, 12%, 44%) 0%, hsl(228, 12%, 44%) 100%);
 }
 
-
-/*----------Dark Mode ----------*/
-@media (prefers-color-scheme: dark){
-  :root{    
-
-      /*---------- Dark ----------*/
-    --white: hsl(230, 17%, 14%);
-    --verypaleblue: hsl(232, 19%, 15%);
-    --lightgrayishblue: hsl(228, 28%, 20%);
-    --darkgrayishblue: hsl(228, 34%, 66%);
-    --verydarkblue: hsl(0, 0%, 100%);
-    --toggle: linear-gradient(to right, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
-  }
-}
