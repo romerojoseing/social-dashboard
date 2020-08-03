@@ -270,6 +270,25 @@ h2{
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 25px;
   }
+
+  .header-grid{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+  }
+
+  .header-followers{
+    padding-bottom: 0px;
+    border: none;
+  }
+
+  .dark-mode{
+    justify-content: flex-end;
+  }
+
+  .dark-mode-title{
+    display: none;
+  }
+
   .wrapper{
     max-width: 1440px;
     margin: auto;
@@ -281,13 +300,30 @@ h2{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 25px;
   }
+
   .wrapper{
     max-width: 1024px;
     margin: auto;
   }  
 }
 
+.is-dark-mode{
+  --white: hsl(230, 17%, 14%);
+  --verypaleblue: hsl(232, 19%, 15%);
+  --lightgrayishblue: hsl(228, 28%, 20%);
+  --darkgrayishblue: hsl(228, 34%, 66%);
+  --verydarkblue: hsl(0, 0%, 100%);
+  --toggle: linear-gradient(to right, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
+}
 
+.is-light-mode{
+  --white: hsl(0, 0%, 100%);
+  --verypaleblue: hsl(225, 100%, 98%);
+  --lightgrayishblue: hsl(227, 47%, 96%);
+  --darkgrayishblue: hsl(228, 12%, 44%);
+  --verydarkblue: hsl(230, 17%, 14%);
+  --toggle: linear-gradient(to right, hsl(228, 12%, 44%) 0%, hsl(228, 12%, 44%) 100%);
+}
 
 /*----------Dark Mode ----------*/
 @media (prefers-color-scheme: dark){
