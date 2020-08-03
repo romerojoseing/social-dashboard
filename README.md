@@ -1,6 +1,6 @@
-# Callenge: Social Media Dashboard
+# Frontend Mentor Callenge: Social Media Dashboard
 
-_Website designed to show my profile as a Web Developer, within this you will find information about who I am, my latest projects and all my contact details._
+_Dashboard to monitor the metrics in social networks of your account._
 
 ## [Try the live demo](https://romerojose.com/) ⚡
 ![Thumbnail](https://github.com/romerojoseing/social-dashboard/blob/master/design/desktop-preview.jpg?raw=true)
@@ -46,7 +46,6 @@ _Technologies used in the project:_
 * [HTML 5](https://es.wikipedia.org/wiki/HTML) - Layout and web structure.
 * [CSS 3](https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada) - Style design.
 * [JavaScript](https://es.wikipedia.org/wiki/JavaScript) - Animations and functionalities.
-* [Bootstrap 4](https://getbootstrap.com/) - Framework for CSS.
 
 <br>
 
