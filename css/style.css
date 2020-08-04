@@ -347,13 +347,3 @@ h2{
   --verydarkblue: hsl(0, 0%, 100%);
   --toggle: linear-gradient(to right, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
 }
-
-.is-light-mode{
-  --white: hsl(0, 0%, 100%);
-  --verypaleblue: hsl(225, 100%, 98%);
-  --lightgrayishblue: hsl(227, 47%, 96%);
-  --darkgrayishblue: hsl(228, 12%, 44%);
-  --verydarkblue: hsl(230, 17%, 14%);
-  --toggle: linear-gradient(to right, hsl(228, 12%, 44%) 0%, hsl(228, 12%, 44%) 100%);
-}
-
