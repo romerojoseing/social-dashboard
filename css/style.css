@@ -6,6 +6,7 @@
 --verypaleblue: hsl(225, 100%, 98%);
 --lightgrayishblue: hsl(227, 47%, 96%);
 --darkgrayishblue: hsl(228, 12%, 44%);
+--hovercard: hsl(233, 13%, 87%);
 --verydarkblue: hsl(230, 17%, 14%);
 --toggle: linear-gradient(to right, hsl(228, 12%, 44%) 0%, hsl(228, 12%, 44%) 100%);
 
@@ -149,6 +150,11 @@ h1{
   text-align: center;
   padding: 1.5em 0;
   position: relative;
+  cursor: pointer;
+}
+
+.card:hover{
+  background-color: var(--hovercard);  
 }
 
 .card:before{
@@ -236,6 +242,11 @@ h2{
   overflow: hidden;
   background-color: var(--lightgrayishblue);
   padding: 1.5em;
+  cursor: pointer;
+}
+
+.card-small:hover{
+  background-color: var(--hovercard);  
 }
 
 .card-small p{
@@ -344,6 +355,7 @@ h2{
   --verypaleblue: hsl(232, 19%, 15%);
   --lightgrayishblue: hsl(228, 28%, 20%);
   --darkgrayishblue: hsl(228, 34%, 66%);
+  --hovercard: hsl(231, 25%, 33%);
   --verydarkblue: hsl(0, 0%, 100%);
   --toggle: linear-gradient(to right, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
 }
