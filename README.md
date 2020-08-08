@@ -1,6 +1,6 @@
 # Frontend Mentor Callenge: Social Media Dashboard
 
-_This is a challenge from website Frontend Mentor, specialized in frontend develop, is a dashboard to monitor the metrics in social networks of your account.13453565634_
+_This is a challenge from website Frontend Mentor, specialized in frontend develop, is a dashboard to monitor the metrics in social networks of your account.134535654_
 
 ## [Try the live demo](https://romerojoseing.github.io/social-dashboard/) ⚡
 ![Thumbnail](https://github.com/romerojoseing/social-dashboard/blob/master/design/desktop-preview.jpg?raw=true)
